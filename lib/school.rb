@@ -1,3 +1,5 @@
+require "pry"
+
 class School
   
   def initialize(name)
@@ -18,6 +20,7 @@ class School
   def sort
     @roster.each do |grade, names|
       names.sort
+      binding.pry
     end
   end
   
